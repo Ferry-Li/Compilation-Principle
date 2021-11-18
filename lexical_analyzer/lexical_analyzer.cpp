@@ -1,5 +1,5 @@
 /*
-´Ê·¨·ÖÎöÆ÷ 
+è¯æ³•åˆ†æå™¨ 
 */ 
 #include<iostream>
 #include<stdio.h>
@@ -80,16 +80,19 @@ void in(int op, int x)
 	else if(op == 1)	prech = ch;
 	
 	se.push_back({x, name});
+	cout<<x<<' '<<name<<endl;
 }
 
 void g()
 {
 	if(scanf("%c", &ch) == 1)	return ;
 	cout<<"Size:"<<se.size()<<endl;
+	/*
 	for(auto i : se)
 	{
 		cout<<' '<<i.first<<' '<<i.second<<endl;
 	}
+	*/
 	cout<<"Input end!"<<endl;
 	flag = 1;
 	//exit(0);
@@ -115,6 +118,7 @@ void sci()
 			cg();
 		}
 		se.push_back({scinum, name});
+		cout<<scinum<<' '<<name<<endl;
 	}
 	else
 	{
@@ -146,6 +150,7 @@ void number()
 			{
 				prech = ch;
 				se.push_back({floatnum, name});
+				cout<<floatnum<<' '<<name<<endl;
 			}
 		}
 		else
@@ -161,7 +166,13 @@ void number()
 	else
 	{
 		prech = ch;
+		if(letter())
+		{
+			cout<<"Error!"<<endl;	
+		} 
+		cg();
 		se.push_back({intnum, name});
+		cout<<intnum<<' '<<name<<endl;
 	}
 }
 
@@ -193,6 +204,7 @@ void words()
 			if(i == name)
 			{
 				se.push_back({id, name});
+				cout<<id<<' '<<name<<endl;
 				id = 0;
 				break;
 			}
@@ -200,6 +212,7 @@ void words()
 		if(id)
 		{
 			se.push_back({id, name});
+			cout<<id<<' '<<endl; 
 		}
 	}
 	else if(ch == '0')
@@ -217,6 +230,7 @@ void words()
 				}
 				prech = ch;
 				se.push_back({hexnum, name});
+				cout<<hexnum<<' '<<endl;
 			}
 			else
 			{
