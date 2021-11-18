@@ -1,1 +1,7 @@
 # Compilation-Principle
+Some program work for the course Compilation-Principle.
+There will be 4 expriments:
+- Lexical analyzer
+- Recursive grammar analyzer
+- LR grammar analyzer
+- Intermediate code generator
