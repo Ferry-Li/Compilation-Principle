@@ -5,3 +5,4 @@ There will be 4 expriments:
 - Recursive grammar analyzer
 - LR grammar analyzer
 - Intermediate code generator
+Maybe there will be a completer compiler.
