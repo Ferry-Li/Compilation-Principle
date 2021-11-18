@@ -6,4 +6,4 @@ There will be 4 expriments:
 - LR grammar analyzer
 - Intermediate code generator
 
-Maybe there will be a completer compiler.
+Maybe there will be a completed compiler for C flat here~
